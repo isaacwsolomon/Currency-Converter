@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#69B54D"
+    tools:context=".SwissfrancActivity">
+
+    <TextView
+        android:id="@+id/TextViewFranc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="99dp"
+        android:hint="Amount converted"
+        android:textColorHint="#CA1818"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EditTextFranc" />
+
+    <Button
+        android:id="@+id/FrancSterlingButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:text="Swiss Franc to sterling"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextViewFranc" />
+
+    <Button
+        android:id="@+id/SterlingFrancButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="61dp"
+        android:text="Sterling to swiss franc"
+        app:layout_constraintStart_toStartOf="@+id/FrancSterlingButton"
+        app:layout_constraintTop_toBottomOf="@+id/FrancSterlingButton" />
+
+    <EditText
+        android:id="@+id/EditTextFranc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="128dp"
+        android:ems="10"
+        android:hint="Enter amount..."
+        android:inputType="numberDecimal"
+        android:textColorHint="@color/purple_700"
+        android:textSize="34sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

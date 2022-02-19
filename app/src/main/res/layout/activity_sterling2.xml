@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_700"
+    tools:context=".SterlingActivity">
+
+    <EditText
+        android:id="@+id/sterlinget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="       Enter amount...."
+        android:inputType="numberDecimal"
+        android:textColorHint="#0051B5"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/TextViewSterling"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.447" />
+
+    <TextView
+        android:id="@+id/TextViewSterling"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="73dp"
+        android:hint="Amount converted"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColorHint="#D81C1C"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/SterligEurobutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/SterligEurobutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="297dp"
+        android:text="Sterling to Euro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/EuroSterlingbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="59dp"
+        android:text="Euro to Sterling"
+        app:layout_constraintStart_toStartOf="@+id/SterligEurobutton"
+        app:layout_constraintTop_toBottomOf="@+id/SterligEurobutton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
